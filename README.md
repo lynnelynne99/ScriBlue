@@ -1,2 +1,2 @@
 # ScriBlue
-<img src "https://github.com/lynnelynne99/ScriBlue/blob/main/penscr.png?raw=true">
+<img src "https://github.com/lynnelynne99/ScriBlue/blob/main/githubimages/penscr.png?raw=true">
