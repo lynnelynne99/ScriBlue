@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ScriBlue</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nixgon+Font&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nixgon Font', sans-serif;
+        }
+
+        h1.text-black {
+            font-family: 'Black Han Sans', sans-serif;
+            font-weight: light;
+        }
+
+        .hero {
+            padding: 50px 0;
+            color: #00498c;
+            position: relative;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .hero img.navbar-logo {
+            max-height: 160px;
+            margin-right: auto;
+            margin-left: 10px;
+            padding: 1px;
+        }
+
+        .hero h1 {
+            margin-top: 20px;
+            font-size: 2.2rem;
+        }
+
+        .hero h2 {
+            font-size: 1rem;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: -20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            width: 26rem;
+            margin-bottom: 20px;
+            background: #ffffff;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+            background: white;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            background: none;
+            margin-top: -35px;
+        }
+
+        .menu-container a {
+            color: #000000;
+            text-decoration: none;
+            margin-right: 60px;
+        }
+
+        .cart-icon {
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 20px;
+            margin-left: 40px;
+        }
+
+        /* Details 버튼 스타일 */
+        .card-link {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: rgba(169, 174, 199, 0.553);
+            color: black;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .card-link:hover {
+            background-color: rgba(77, 85, 129, 0.553);
+            color: white;
+        }
+
+        /* 텍스트 볼드체 스타일 */
+        .card-title,
+        .card-subtitle {
+            font-weight: bold;
+        }
+
+        
+
+        /* View All Products 버튼 스타일 */
+        .view-all-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .view-all-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: rgba(169, 174, 199, 0.553);
+            color: black;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .view-all-link:hover {
+            background-color: rgba(77, 85, 129, 0.553);
+            color: rgb(247, 247, 247);
+        }
+        .nav-item {
+            position: relative;
+            display: inline-block;
+            color: #000000;
+            text-decoration: none;
+            margin-right: 60px;
+            transition: color 0.3s;
+        }
+
+        .nav-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(25, 163, 87);
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .nav-item:hover {
+            color: #00498c;
+            font-weight: bold;
+        }
+
+        .nav-item:hover::before {
+            opacity: 0.2; }
+            #logo:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .hero {
+            padding: 50px 0;
+            color: #d3dce2;
+            position: relative;
+            text-align: center;
+            background: linear-gradient(to bottom, #d3dce2 0%, #ffffff 100%);
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="hero text-left py-5">
+        <div class="menu-container">
+            <a href="#" class="nav-item" id="home-link">Home</a>
+            <a href="#" class="nav-item" id="about-link">About</a>
+            <a href="#" class="nav-item" id="shop-link">Shop</a>
+            <a href="#" class="nav-item" id="contact-link">Contact</a>
+            <span class="cart-icon">🛒</span>
+        </div>
+        <a href="index.html"></a><img src="C:\Users\meeting2\Desktop\githubimages\penscr.png" alt="Logo" class="navbar-logo" id="logo">
+        <h1 class="text-black">AI를 활용한 나만의 손글씨폰트 </h1>
+    </div>
+    <div class="container mt-5">
+        <div class="card-container">
+            <div class="card"onclick="location.href='beginner.html';" style="cursor:pointer;">
+                <img src="https://cdn.pixabay.com/photo/2017/08/11/01/37/back-to-school-2629361_640.jpg"
+                    class="card-img-top" alt="Beginner Card">
+                <div class="card-body">
+                    <h5 class="card-title">Beginner</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">1만원 · 10분 후 제작 완료!</h6>
+                    <p class="card-text">This option is for beginners. <br />If you want a reasonable purchase,
+                        click here!</p>
+                    <a href="https://www.hongik.ac.kr/index.do" target="_blank" class="card-link">Details</a>
+                </div>
+            </div>
+
+            <div class="card" onclick="location.href='teacher.html';" style="cursor:pointer;">
+                <img src="https://cdn.pixabay.com/photo/2020/12/16/06/10/woman-5835747_640.jpg" class="card-img-top"
+                    alt="Teacher Card">
+                <div class="card-body">
+                    <h5 class="card-title">Teacher</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">2만원 · 30분 후 제작 완료!</h6>
+                    <p class="card-text">This option is for teachers. <br />If you want specialized features, click
+                        here!</p>
+                    <a href="https://www.hongik.ac.kr/index.do" target="_blank" class="card-link">Details</a>
+                </div>
+            </div>
+
+            <div class="card" onclick="location.href='socialmedia.html';" style="cursor:pointer;">
+                <img src="https://cdn.pixabay.com/photo/2014/08/31/23/56/social-432496_640.png" class="card-img-top"
+                    alt="YouTuber Card">
+                <div class="card-body">
+                    <h5 class="card-title">Social Media</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">3만원 · 1시간 후 제작 완료!</h6>
+                    <p class="card-text">This option is for your social media. <br />If you want the finest branding options,
+                        click here!</p>
+                    <a href="https://www.hongik.ac.kr/index.do" target="_blank" class="card-link">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="view-all-button" style="margin-top: 30px; margin-bottom: 30px;">
+        <a href="#" class="view-all-link">View All Products</a>
+    </div>
+</body>
+
+</html>
